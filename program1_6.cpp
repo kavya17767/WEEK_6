@@ -15,7 +15,7 @@ public:
         return re == o.re && im == o.im;
     }
 
-    // friend: left operand is 'cout', not Complex
+    
     friend ostream& operator<<(ostream& os, const Complex &c) {
         os << c.re << (c.im >= 0 ? "+" : "") << c.im << "i";
         return os;                                 
